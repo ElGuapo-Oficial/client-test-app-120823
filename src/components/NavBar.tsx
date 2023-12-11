@@ -4,9 +4,9 @@ import '../styles/components/NavBar.css';
 const NavBar = () => {
     return (
         <nav className="main-nav">
-            <button><Link to="/" className="link">Home</Link></button>
-            <button><Link to="/exercises" className="link">Exercises</Link></button>
-            <button><Link to="/projects" className="link">Projects</Link></button>
+            <Link to="/" className="link"><button>Home</button></Link>
+            <Link to="/exercises" className="link"><button>Exercises</button></Link>
+            <Link to="/projects" className="link"><button>Projects</button></Link>
         </nav>
     )
 }
