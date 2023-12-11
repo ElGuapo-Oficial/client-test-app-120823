@@ -1,0 +1,29 @@
+.exercises {
+    display: flex;
+    color: white;
+    background-color: blue;
+    text-align: center;
+}
+
+.exercises nav .link {
+    text-decoration: none;
+}
+
+.exercises nav .link button {
+    background-color: red;
+    width: 100%;
+    display: block;
+    border: none;
+    height: 50px;
+    cursor: pointer;
+}
+
+.exercises nav .link button:hover {
+    background-color: yellow;
+}
+
+.exercises .content {
+    flex-grow: 1;
+    color: black;
+    background-color: white;
+}

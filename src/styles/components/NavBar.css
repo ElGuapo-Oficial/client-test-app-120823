@@ -1,0 +1,22 @@
+.main-nav {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 100%;
+    background-color: #F8F8F8;
+}
+
+.main-nav button {
+    background-color: transparent;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.main-nav button:hover {
+    background-color: yellow;
+}
+
+.main-nav button .link {
+    text-decoration: none;
+}
