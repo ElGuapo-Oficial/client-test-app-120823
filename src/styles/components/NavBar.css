@@ -1,10 +1,13 @@
 .main-nav {
+    position: fixed;
+    top: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 50px;
     width: 100%;
     background-color: #F8F8F8;
+    z-index: 100;
 }
 
 .main-nav .link {

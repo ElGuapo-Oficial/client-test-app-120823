@@ -9,6 +9,7 @@
 }
 
 .main {
+  margin-top: 50px;
   flex-grow: 1; /* Allows main content to expand and push the footer down */
   display: flex;
 }

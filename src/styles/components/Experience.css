@@ -1,0 +1,39 @@
+.experience {
+    position: relative;
+    top: 0;
+    width: 100%;
+    background-color: white;
+}
+
+.experience-item {
+    position: relative;
+    background-color: lightgray;
+    width: 350px;
+    height: 200px;
+    left: -100%;
+}
+
+.animation-left-active {
+    animation: appearFromLeft 1s ease-out forwards;
+    left: -100%;
+}
+
+.animation-right-active {
+    animation: appearFromRight 1s ease-out forwards;
+    left: 100%;  /* Added to specify initial position */
+}
+
+@keyframes appearFromLeft {
+    0% { left: -100% }
+    100% { 
+        left: 15%; 
+    }
+}
+
+@keyframes appearFromRight {
+    0% { left: 100% }
+    100% { 
+        left: calc(85% - 350px);
+    }
+}
+

@@ -1,8 +1,11 @@
 import '../../styles/pages/Home.css'
+import Introduction from '../../components/Introduction';
 
 const Home = () => {
     return (
-        <div className="home">Home</div>
+        <>
+            <Introduction />
+        </>
     )
 }
 
