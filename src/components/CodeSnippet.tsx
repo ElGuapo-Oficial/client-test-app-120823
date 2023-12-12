@@ -25,7 +25,7 @@ const CodeSnippetA: React.FC<CodeSnippetProps> = ({ code, language }) => {
 
 const CodeSnippet: React.FC<CodeSnippetProps> = ({ title, code, language, width }) => {
     return (
-        <div style={{fontSize: "13px", width: `${width || "450px"}`}}>
+        <div style={{fontSize: "14px", width: `${width || "450px"}`}}>
             { title && <div style={{backgroundColor: "red"}}>{title}</div> }
             <CodeSnippetA code={code} language={language} />
         </div>
