@@ -1,9 +1,10 @@
 .introdiction-wrapper {
     position: relative;
     top: 0;
-    /* height: 100vh; */
+    height: 100vh;
     overflow: hidden;
     background-color: red;
+    background-color: black;
 }
 
 .selfie {
