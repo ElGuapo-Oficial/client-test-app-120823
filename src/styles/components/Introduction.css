@@ -1,7 +1,7 @@
 .introdiction-wrapper {
     position: relative;
     top: 0;
-    height: 100vh;
+    /* height: 100vh; */
     overflow: hidden;
     background-color: red;
 }
@@ -19,14 +19,23 @@
     animation: appearRightToCenter 1.5s cubic-bezier(0.1, 1, 0.1, 1) forwards;
 }
 
-@media (min-width:1350px) {
+/* Do not stretch the selfie more passing this width */
+@media (min-width: 1350px) {
     .selfie {
       background-size: 1350px auto;
     }
-  }
+}
 
+/* Selfie mobile animation */
 @keyframes appearRightToCenter {
-    100% { left: 25%; }
+    100% { left: 0%; }
+}
+
+/* Selfie desktop animation */
+@media (min-width: 431px) {
+    @keyframes appearRightToCenter {
+        100% { left: 25%; }
+    }
 }
 
 .introduction {
@@ -63,7 +72,7 @@
   
 .introduction li {
     position: relative;
-    left: -400px;
+    left: -350px;
     height: 30px;
     line-height: 30px;
     margin: 20px 0;
