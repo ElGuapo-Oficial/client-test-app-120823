@@ -1,5 +1,4 @@
-const sudoku: string = `
-function solveSudoku(table) {
+const sudoku: string = `function solveSudoku(table) {
     for row {
         for col {
             if (table[row][col] === '') {
@@ -20,8 +19,7 @@ function solveSudoku(table) {
 }
 `;
 
-const nqueens: string = `
-function solveNQueens(board, col) {
+const nqueens: string = `function solveNQueens(board, col) {
     if (col >= board.length) {
         return true;
     }
@@ -31,7 +29,7 @@ function solveNQueens(board, col) {
             if (solveNQueens(board, col + 1)) {
                 return true;
             }
-            board[i][col] = 0; // Backtrack
+            board[i][col] = 0;
         }
     }
     return false;
