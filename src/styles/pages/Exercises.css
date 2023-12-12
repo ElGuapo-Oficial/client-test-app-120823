@@ -1,25 +1,27 @@
 .exercises {
     display: flex;
-    color: white;
     background-color: blue;
     text-align: center;
 }
 
-.exercises nav .link {
-    text-decoration: none;
+.exercises nav {
+    width: 110px;
 }
 
-.exercises nav .link button {
-    background-color: red;
-    width: 100%;
-    display: block;
-    border: none;
-    height: 50px;
+.exercises nav .link {
+    text-decoration: none;
     cursor: pointer;
 }
 
 .exercises nav .link button:hover {
     background-color: yellow;
+}
+
+.exercises nav .link button {
+    background-color: red;
+    border: none;
+    width: 100%;
+    height: 45px;
 }
 
 .exercises .content {

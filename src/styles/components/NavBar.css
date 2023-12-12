@@ -1,27 +1,24 @@
 .main-nav {
     display: flex;
     justify-content: center;
+    align-items: center;
     height: 50px;
     width: 100%;
     background-color: #F8F8F8;
 }
 
 .main-nav .link {
-    padding: 0;
-    margin: 0;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .main-nav .link button {
-    background-color: transparent;
+    background-color: aqua;
     border: none;
-    padding: 15px;
-    cursor: pointer;
+    width: 80px;
+    height: 50px;
 }
 
 .main-nav .link button:hover {
     background-color: yellow;
-}
-
-.main-nav .link {
-    text-decoration: none;
 }
