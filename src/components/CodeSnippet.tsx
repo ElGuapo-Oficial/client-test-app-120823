@@ -15,7 +15,7 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({ code, language }) => {
     return (
         <pre>
             <code className={`language-${language}`}>
-                {code}
+                { code }
             </code>
         </pre>
   );

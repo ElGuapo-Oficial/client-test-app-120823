@@ -11,7 +11,9 @@ const BackTracking = () => {
     return (
         <>
             <div>BackTracking</div>
-            <CodeSnippet code={code} language="javascript" />
+            <div style={{fontSize: "14px", width: "50%", border: "1px solid white"}}>
+                <CodeSnippet code={code} language="javascript" />
+            </div>
         </>
     );
 }
