@@ -1,4 +1,4 @@
-import '../../styles/pages/Home.css'
+import '../../styles/pages/main/Home.css'
 import Introduction from '../../components/Introduction';
 import Experience from '../../components/Experience';
 import Skills from '../../components/Skills';

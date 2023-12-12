@@ -1,4 +1,4 @@
-import '../../styles/pages/Projects.css';
+import '../../styles/pages/main/Projects.css';
 
 const Projects = () => {
     return (<div className='projects'>Projects</div>)
