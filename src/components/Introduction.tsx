@@ -19,11 +19,16 @@ const Introduction = () => {
                     <div className="social-networks">
                         <div className="social-networks-wrapper">
                             <a target='_blank' rel="noopener noreferrer" href='https://www.linkedin.com/in/najashmarron/'><i className="fab fa-linkedin fa-2x"></i></a>
-                            <a><i className="fab fa-stack-overflow fa-2x"></i></a>
-                            <a><i className="fab fa-facebook fa-2x"></i></a>
-                            <a><i className="fab fa-youtube fa-2x"></i></a>
-                            <a><i className="fab fa-twitter fa-2x"></i></a>
-                            <a><i className="fab fa-instagram fa-2x"></i></a>
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                            <a href='#'><i className="fab fa-stack-overflow fa-2x"></i></a>
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                            <a href='#'><i className="fab fa-facebook fa-2x"></i></a>
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                            <a href='#'><i className="fab fa-youtube fa-2x"></i></a>
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                            <a href='#'><i className="fab fa-twitter fa-2x"></i></a>
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                            <a href='#'><i className="fab fa-instagram fa-2x"></i></a>
                         </div>
                     </div>
                 </div>
