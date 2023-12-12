@@ -1,18 +1,16 @@
 import CodeSnippet from "../../components/CodeSnippet";
+import { sudoku, nqueens } from "../../codeSnippets/backTracking";
 
 const BackTracking = () => {
-    const code: string = `
-    function greet(name: string) {
-        console.log("Hello, " + name + "!");
-    }
-    
-    greet("World");`;
 
     return (
         <>
             <div>BackTracking</div>
-            <div style={{fontSize: "14px", width: "50%", border: "1px solid white"}}>
-                <CodeSnippet code={code} language="javascript" />
+            <div style={{fontSize: "13px", width: "450px"}}>
+                <CodeSnippet code={sudoku} language="javascript" />
+            </div>
+            <div style={{fontSize: "13px", width: "450px"}}>
+                <CodeSnippet code={nqueens} language="javascript" />
             </div>
         </>
     );
