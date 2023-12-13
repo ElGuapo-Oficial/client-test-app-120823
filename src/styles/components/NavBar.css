@@ -10,6 +10,12 @@
     z-index: 100;
 }
 
+.main-nav .nav-links {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
 .main-nav .link {
     text-decoration: none;
 }
