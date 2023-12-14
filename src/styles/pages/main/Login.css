@@ -16,12 +16,29 @@
     left: 50%;
     top: 20%;
     transform: translateX(-50%);
-    padding: 20px;
+    padding: 40px;
+    padding-right: 80px;
 }
 
 .form label {
     display: inline-block;
-    width: 80px;
+    width: 140px;
     text-align: end;
+    /* background-color: red; */
 }
+
+.form input {
+    margin-left: 5px;
+}
+
+.form button {
+    cursor: pointer;
+}
+
+.signup {
+    border: none;
+    background-color: transparent;
+    text-decoration-line: underline;
+}
+
 

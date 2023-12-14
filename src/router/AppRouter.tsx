@@ -3,6 +3,7 @@ import Home from '../pages/main/Home';
 import Exercises from '../pages/main/Exercises';
 import Projects from '../pages/main/Projects';
 import Login from '../pages/main/Login';
+import Signup from '../pages/main/Signup';
 import BackTracking from '../pages/exercises/BackTracking';
 import Trees from '../pages/exercises/Trees';
 import Graphs from '../pages/exercises/Graphs';
@@ -18,6 +19,7 @@ const AppRouter = () => {
         </Route>
         <Route path="/projects" element={<Projects />} />
         <Route path="/login" element={<Login />} ></Route>
+        <Route path="/signup" element={<Signup />} ></Route>
     </Routes>
   );
 };
