@@ -33,7 +33,6 @@ const Experience: React.FC = () => {
                     throw new Error('Error on API Call');
                 }
                 const experienceData = await experienceDataResponse.json();
-                console.log(experienceData);
                 setExperience(experienceData);
             } catch (error) {
                 console.log("The following error happend: ", error);

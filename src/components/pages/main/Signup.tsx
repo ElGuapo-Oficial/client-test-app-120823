@@ -42,8 +42,6 @@ const Signup: React.FC = () => {
             confirmPassword: String(formData.get('signup-confirm-password'))
         };
 
-        console.log("HERE: ", jsonObject);
-
         if (validData(jsonObject)) {
             postFormData(jsonObject, apiMethod)
         }
@@ -66,9 +64,7 @@ const Signup: React.FC = () => {
                 throw new Error(data.message);
             }
 
-              console.log('Login successful:', data);
               setError('');
-              return data;
         } catch (e) {
             let errorMessage = 'An error occurred on Singnup';
             if (e instanceof Error) {
