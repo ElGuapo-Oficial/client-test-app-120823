@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import '../../styles/pages/main/Login.css'
 
 type formDataObject = {
@@ -9,6 +9,7 @@ type formDataObject = {
 
 const Login: React.FC = () => {
     const [error, setError] = useState<string>();
+    const navigate = useNavigate();
 
     useEffect(() => {}, [])
 
@@ -60,9 +61,11 @@ const Login: React.FC = () => {
                 throw new Error(data.message);
             }
 
-              console.log('Login successful:', data);
-              setError('');
-              return data;
+            localStorage.setItem('token', data.token)
+            console.log('Login successful:', data);
+            setError('');
+            navigate('/exercises/backtracking');
+            return data;
         } catch (e) {
             let errorMessage = 'An error occurred on Login';
             if (e instanceof Error) {
