@@ -47,6 +47,7 @@ const Login: React.FC = () => {
     }
 
     const postFormData = async(formData: formDataObject, apiMethod: string) => {
+        console.log("formData: ", formData, apiMethod, process.env.REACT_APP_SERVER_URL);
         try {
             const response = await fetch(`${process.env.REACT_APP_SERVER_URL}/${apiMethod}`, {
                 method: "POST",

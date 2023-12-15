@@ -20,7 +20,7 @@
     text-decoration: none;
 }
 
-.main-nav .link button {
+.main-nav button {
     background-color: transparent;
     border: none;
     width: 80px;
@@ -28,7 +28,7 @@
     cursor: pointer;
 }
 
-.main-nav .link button:hover {
+.main-nav button:hover {
     background-color: gray;
     color: white;
 }
