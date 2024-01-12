@@ -11,6 +11,7 @@
     width: 350px;
     height: 200px;
     left: -100%;
+    cursor: pointer;
 }
 
 .animation-left-active {

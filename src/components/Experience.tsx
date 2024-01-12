@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import VisibleWrapper from '../components/hocs/VisibleWrapper';
+import VisibleWrapper from '../hocs/VisibleWrapper';
 import '../styles/components/Experience.css';
 
 type ExperienceDataProps = {

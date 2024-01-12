@@ -1,5 +1,5 @@
 import { Link, Outlet } from 'react-router-dom';
-import '../../../styles/pages/main/Exercises.css';
+import '../../styles/pages/main/Exercises.css';
 
 const Exercises = () => {
     return (

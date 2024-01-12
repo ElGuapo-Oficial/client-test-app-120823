@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState} from 'react';
 
 interface VisibleWrapperProps {
     children: (isActive: boolean) => React.ReactNode;
-    animation: string;
+    animation?: string;
 }
 
 const VisibleWrapper: React.FC<VisibleWrapperProps> = ({ children, animation }) => {
@@ -30,7 +30,7 @@ const VisibleWrapper: React.FC<VisibleWrapperProps> = ({ children, animation }) 
     }, [animation]);
   
     return (
-      <div ref={ref} data-animation={animation}>
+      <div ref={ref} data-animation={animation || null}>
           { children(isActive) }
       </div>
     );

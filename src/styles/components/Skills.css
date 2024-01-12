@@ -12,21 +12,38 @@
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 300px;
+    width: 500px;
     background-color: white;
 }
 
-.progress-container {
+.progress-bar-container {
     width: 100%;
-    background-color: #ccc;
+    background-color: gray;
     margin-bottom: 10px;
     border-radius: 10px;
   }
   
 .progress-bar {
-    width: 50%;  /* Set width to represent progress */
-    height: 5px;
+    height: 15px;
     background-color: yellow;
     border-radius: 10px;
     transition: width 1s ease-out;
+}
+
+.progress-bar-tags {
+    width: 100%;
+    /* background-color: red; */
+}
+
+.progress-bar-tags .percentage {
+    display: inline-block;
+    /* background-color: green; */
+    text-align: end;
+    transition: width 1s ease-out;
+}
+
+.progress-bar-tags .name {
+    display: inline-block;
+    width: 70px;
+    /* background-color: red; */
 }

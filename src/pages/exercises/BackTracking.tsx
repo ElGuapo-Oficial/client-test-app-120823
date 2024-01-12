@@ -1,5 +1,5 @@
-import CodeSnippet from "../../CodeSnippet";
-import { sudoku, nqueens, targetSum } from "../../../codeSnippets/backTracking";
+import CodeSnippet from "../../components/CodeSnippet";
+import { sudoku, nqueens, targetSum } from "../../codeSnippets/backTracking";
 
 const BackTracking = () => {
 

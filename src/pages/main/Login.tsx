@@ -1,14 +1,17 @@
 import React, { useState, useEffect } from 'react';
-import '../../../styles/pages/main/Login.css'
+import { Link, useNavigate } from 'react-router-dom';
+import useAuth from '../../customHooks/useAuth';
+import '../../styles/pages/main/Login.css'
 
 type formDataObject = {
-    email: string |null;
+    email: string | null;
     password: string | null;
-    confirmPassword?: string | null;
 }
 
-const Signup: React.FC = () => {
+const Login: React.FC = () => {
     const [error, setError] = useState<string>();
+    const { login } = useAuth();
+    const navigate = useNavigate();
 
     useEffect(() => {}, [])
 
@@ -19,15 +22,12 @@ const Signup: React.FC = () => {
             localError = "email cannot be empty";
         } else if (!formData?.password?.length) { 
             localError = "password cannot be empty";
-        } else if (formData?.password !== formData?.confirmPassword) {
-            localError = "password and confirmed password don't match";
         }
 
         if (localError) {
             setError(localError);
             return false;
         }
-        setError('');
         return true;
     }
 
@@ -37,9 +37,8 @@ const Signup: React.FC = () => {
         const formData = new FormData(e.currentTarget);
 
         const jsonObject: formDataObject = {
-            email: String(formData.get('signup-email')),
-            password: String(formData.get('signup-password')),
-            confirmPassword: String(formData.get('signup-confirm-password'))
+            email: String(formData.get('login-email')),
+            password: String(formData.get('login-password'))
         };
 
         if (validData(jsonObject)) {
@@ -64,37 +63,38 @@ const Signup: React.FC = () => {
                 throw new Error(data.message);
             }
 
-              setError('');
+            login(data.token);
+            setError('');
+            navigate('/exercises/backtracking');
         } catch (e) {
-            let errorMessage = 'An error occurred on Singnup';
+            let errorMessage = 'An error occurred on Login';
             if (e instanceof Error) {
                 errorMessage = e.message;
             }
-            setError(errorMessage);
-            console.log("Error on submitting Singup Data: ", e);
+            setError(() => errorMessage);
+            console.log("Error on submitting Login Data: ", e)
         }
     }
 
     return (
         <div className="login">
-            <form id="signup-form" onSubmit={(e) => formSubmitHandler(e, "signup")} className="form">
+            <form id="login-form" onSubmit={(e) => formSubmitHandler(e, "login")} className='form'>
                 <div>
-                    <label htmlFor="signup-email">email: </label>
-                    <input id="signup-email" name="signup-email" type="email" />
+                    <label htmlFor="login-email">email: </label>
+                    <input id="login-email" name="login-email" type="email" />
                 </div>
                 <div>
-                    <label htmlFor="signup-password">password: </label>
-                    <input id="signup-password" name="signup-password" type="password" />
+                    <label htmlFor="login-password">password: </label>
+                    <input id="login-password" name="login-password" type="password" />
                 </div>
+                <button>Login</button>
                 <div>
-                    <label htmlFor="signup-confirm-password">confirm password: </label>
-                    <input id="signup-confirm-password" name="signup-confirm-password" type="password" />
+                    <Link to="/signup"><button className="signup">Signup</button></Link>
                 </div>
-                <button>Signup</button>
                 { error && <p style={{color: "red"}}>{error}</p>}
             </form>
         </div>
     )
 }
 
-export default Signup;
+export default Login;

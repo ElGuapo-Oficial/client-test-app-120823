@@ -1,5 +1,5 @@
 import { Link, useNavigate } from 'react-router-dom';
-import useAuth from '../components/customHooks/useAuth';
+import useAuth from '../customHooks/useAuth';
 import '../styles/components/NavBar.css';
 
 const NavBar = () => {
