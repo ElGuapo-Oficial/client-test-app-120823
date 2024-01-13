@@ -24,7 +24,7 @@
   }
   
 .progress-bar {
-    height: 15px;
+    height: 8px;
     background-color: yellow;
     border-radius: 10px;
     transition: width 1s ease-out;
@@ -32,12 +32,10 @@
 
 .progress-bar-tags {
     width: 100%;
-    /* background-color: red; */
 }
 
 .progress-bar-tags .percentage {
     display: inline-block;
-    /* background-color: green; */
     text-align: end;
     transition: width 1s ease-out;
 }
@@ -45,5 +43,4 @@
 .progress-bar-tags .name {
     display: inline-block;
     width: 70px;
-    /* background-color: red; */
 }

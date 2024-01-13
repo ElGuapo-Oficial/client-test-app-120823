@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
 import VisibleWrapper from '../hocs/VisibleWrapper';
+import FlippingCard from './FlippingCard';
 import '../styles/components/Experience.css';
 
-type ExperienceDataProps = {
+export type ExperienceDataProps = {
     id: number;
     company: string;
     years: string;
@@ -17,7 +18,7 @@ type ExperienceItemProps = {
 const ExperienceItem: React.FC<ExperienceItemProps> = ({item, isActive}) => {
     return (
         <div className={`experience-item animation-${item.id % 2 === 0 ? "left" : "right" }-${isActive ? 'active' : ''}`}>
-            { item.company }
+            <FlippingCard info={item} />
         </div>
     )
 }

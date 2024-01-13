@@ -1,0 +1,39 @@
+.card-container {
+    perspective: 1000px; /* This makes flipping the card to have depth */
+    width: 100%;
+    height: 100%;
+}
+
+.card {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+
+    transform-style: preserve-3d; /* allow children to exist in 3d */
+    transition: transform 0.5s;
+}
+
+.front, .back {
+    backface-visibility: hidden; /* hides the back face (reverse side) when the element is turned in 3D space */
+    position: absolute; /* This stack both elements on top of each other */
+    width: 100%;
+    height: 100%;
+}
+
+.front {
+    background-color: blue;
+}
+
+.back {
+    background-color: yellow;
+}
+
+.back {
+    transform: rotateY(180deg); /* the back element's "visible side" is intially facing away from the viewer, thus hidden */
+}
+
+.card-container.flipped .card {
+    transform: rotateY(180deg) scale(2);
+}
+  
