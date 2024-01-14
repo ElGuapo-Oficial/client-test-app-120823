@@ -1,18 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import '../../styles/pages/main/Login.css'
-
-type formDataObject = {
-    email: string |null;
-    password: string | null;
-    confirmPassword?: string | null;
-}
+import { SignUp } from '../../types/All';
+import '../../styles/pages/main/Login.css';
 
 const Signup: React.FC = () => {
     const [error, setError] = useState<string>();
 
     useEffect(() => {}, [])
 
-    const validData = (formData: formDataObject): boolean => {
+    const validData = (formData: SignUp): boolean => {
         let localError: string = '';
 
         if (!formData?.email?.length) {
@@ -36,7 +31,7 @@ const Signup: React.FC = () => {
  
         const formData = new FormData(e.currentTarget);
 
-        const jsonObject: formDataObject = {
+        const jsonObject: SignUp = {
             email: String(formData.get('signup-email')),
             password: String(formData.get('signup-password')),
             confirmPassword: String(formData.get('signup-confirm-password'))
@@ -47,7 +42,7 @@ const Signup: React.FC = () => {
         }
     }
 
-    const postFormData = async(formData: formDataObject, apiMethod: string) => {
+    const postFormData = async(formData: SignUp, apiMethod: string) => {
         try {
             const response = await fetch(`${process.env.REACT_APP_SERVER_URL}/${apiMethod}`, {
                 method: "POST",

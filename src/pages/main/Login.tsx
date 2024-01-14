@@ -1,12 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import useAuth from '../../customHooks/useAuth';
+import { SignIn } from '../../types/All';
 import '../../styles/pages/main/Login.css'
-
-type formDataObject = {
-    email: string | null;
-    password: string | null;
-}
 
 const Login: React.FC = () => {
     const [error, setError] = useState<string>();
@@ -15,7 +11,7 @@ const Login: React.FC = () => {
 
     useEffect(() => {}, [])
 
-    const validData = (formData: formDataObject): boolean => {
+    const validData = (formData: SignIn): boolean => {
         let localError: string = '';
 
         if (!formData?.email?.length) {
@@ -36,7 +32,7 @@ const Login: React.FC = () => {
  
         const formData = new FormData(e.currentTarget);
 
-        const jsonObject: formDataObject = {
+        const jsonObject: SignIn = {
             email: String(formData.get('login-email')),
             password: String(formData.get('login-password'))
         };
@@ -46,7 +42,7 @@ const Login: React.FC = () => {
         }
     }
 
-    const postFormData = async(formData: formDataObject, apiMethod: string) => {
+    const postFormData = async(formData: SignIn, apiMethod: string) => {
         try {
             const response = await fetch(`${process.env.REACT_APP_SERVER_URL}/${apiMethod}`, {
                 method: "POST",

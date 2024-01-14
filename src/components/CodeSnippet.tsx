@@ -1,13 +1,7 @@
 import React, { useEffect } from 'react';
 import Prism from 'prismjs';
+import { CodeSnippetProps } from '../types/All';
 import 'prismjs/themes/prism-okaidia.css'; // or other theme
-
-type CodeSnippetProps = {
-    title?: string;
-    code: string;
-    language: string;
-    width?: string;
-}
 
 const CodeSnippetA: React.FC<CodeSnippetProps> = ({ code, language }) => {
     useEffect(() => {
