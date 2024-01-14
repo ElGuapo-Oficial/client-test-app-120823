@@ -15,12 +15,6 @@
     transition: transform 0.5s;
 }
 
-.front.image {
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
 .front, .back {
     backface-visibility: hidden; /* hides the back face (reverse side) when the element is turned in 3D space */
     position: absolute; /* This stack both elements on top of each other */
@@ -28,23 +22,17 @@
     height: 100%;
 }
 
-/* .front {
-    background-color: lightblue;
-} */
-
-.back {
-    background-color: red;
+.front {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .back {
     transform: rotateY(180deg); /* the back element's "visible side" is intially facing away from the viewer, thus hidden */
+    background-color: red;
 }
 
 .card-container.flipped .card {
     transform: rotateY(180deg) scale(1.5);
 }
-
-.card-container.flipped .card .back {
-    z-index: 100;
-}
-  
