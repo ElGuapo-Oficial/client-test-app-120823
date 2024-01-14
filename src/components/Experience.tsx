@@ -6,7 +6,7 @@ import { ExperienceData } from '../lib/ExperienceInfo';
 
 const ExperienceItem: React.FC<ExperienceItemProps> = ({item, isActive}) => {
     return (
-        <div className={`experience-item animation-${item.id % 2 === 0 ? "left" : "right" }-${isActive ? 'active' : ''}`}>
+        <div className={`experience-item animation-${item.id % 2 === 0 ? "right" : "left" }-${isActive ? 'active' : ''}`}>
             <FlippingCard info={item} />
         </div>
     )

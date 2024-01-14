@@ -10,30 +10,30 @@ export const ExperienceData: ExperienceDataProps[] = [
     },
     {
         id: 2,
-        company: "PayPal2",
-        years: "7",
-        stack: "JS",
-        image: '/images/paypal.png'
-    },
-    {
-        id: 3,
-        company: "PayPal3",
-        years: "7",
-        stack: "JS",
-        image: '/images/paypal.png'
-    },
-    {
-        id: 4,
         company: "PayPal4",
         years: "7",
         stack: "JS",
-        image: '/images/paypal.png'
+        image: '/images/sibatel.png'
     },
     {
-        id: 5,
+        id: 3,
         company: "PayPal5",
         years: "7",
         stack: "JS",
-        image: '/images/paypal.png'
-    }
+        image: '/images/gameloft.png'
+    },
+    {
+        id: 4,
+        company: "PayPal2",
+        years: "7",
+        stack: "JS",
+        image: '/images/codeservices.png'
+    },
+    {
+        id: 5,
+        company: "PayPal3",
+        years: "7",
+        stack: "JS",
+        image: '/images/lowrance.svg'
+    },
 ];
