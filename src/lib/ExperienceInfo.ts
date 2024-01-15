@@ -7,7 +7,7 @@ export const ExperienceData: ExperienceDataProps[] = [
         years: "7",
         image: '/images/paypal.png',
         link: { value: 'https://www.paypal.com', name: "PayPal.com"},
-        description: "Worked as a Full Stack Developer enhancing PayPal's Expeirience on Checkout Team, Merchant Team and Braintree.",
+        description: "Full Stack Senior Engineer enhancing PayPal's Expeirience on Checkout Team, Merchant Team and Braintree.",
         stack: "React, Redux, Node, Express, GraphQL, Java, Ruby",
     },
     {
@@ -16,8 +16,8 @@ export const ExperienceData: ExperienceDataProps[] = [
         years: "7",
         image: '/images/sibatel.png',
         link: { value: 'https://www.sibatel.com', name: "Sibatel.com"},
-        description: "Worked as a Full Stack Developer enhancing PayPal's Expeirience on Checkout Team, Merchant Team and Braintree.",
-        stack: "React, Redux, Node, Express, GraphQL, Java, Ruby",
+        description: "Developed web experiences.",
+        stack: "Agular, React, Redux, Node, Express, C++",
     },
     {
         id: 3,
@@ -26,7 +26,7 @@ export const ExperienceData: ExperienceDataProps[] = [
         image: '/images/gameloft.png',
         link: { value: 'https://www.gameloft.com', name: "Gameloft.com"},
         description: "Worked as a Full Stack Developer enhancing PayPal's Expeirience on Checkout Team, Merchant Team and Braintree.",
-        stack: "React, Redux, Node, Express, GraphQL, Java, Ruby",
+        stack: "Scrum, Agile, Android OS, iOS"
     },
     {
         id: 4,
@@ -34,8 +34,8 @@ export const ExperienceData: ExperienceDataProps[] = [
         years: "7",
         image: '/images/codeservices.png',
         link: { value: 'https://www.codeservices.com', name: "codeservices.com"},
-        description: "Worked as a Full Stack Developer enhancing PayPal's Expeirience on Checkout Team, Merchant Team and Braintree.",
-        stack: "React, Redux, Node, Express, GraphQL, Java, Ruby",
+        description: "Desktop Application.",
+        stack: "Visual Basic, C#.Net, Visual Studio",
     },
     {
         id: 5,
@@ -43,7 +43,7 @@ export const ExperienceData: ExperienceDataProps[] = [
         years: "7",
         image: '/images/lowrance.svg',
         link: { value: 'https://www.lowrance.com', name: "lowrance.com"},
-        description: "Worked as a Full Stack Developer enhancing PayPal's Expeirience on Checkout Team, Merchant Team and Braintree.",
-        stack: "React, Redux, Node, Express, GraphQL, Java, Ruby",
+        description: "Propietary OS for Sonar and GPS",
+        stack: "C++.Net Visual Studio",
     },
 ];

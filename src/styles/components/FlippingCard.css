@@ -43,9 +43,8 @@
 }
 
 .back .description {
-    /* color: red; */
+    color: black;
     background-color: white;
-    font-size: 12px;
     padding: 10px;
 }
 
@@ -54,5 +53,5 @@
 }
 
 .card-container.flipped .card {
-    transform: rotateY(180deg) scale(1.5);
+    transform: rotateY(180deg);
 }
