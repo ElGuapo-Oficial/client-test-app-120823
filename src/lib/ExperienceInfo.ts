@@ -25,7 +25,7 @@ export const ExperienceData: ExperienceDataProps[] = [
         years: "7",
         image: '/images/gameloft.png',
         link: { value: 'https://www.gameloft.com', name: "Gameloft.com"},
-        description: "Worked as a Full Stack Developer enhancing PayPal's Expeirience on Checkout Team, Merchant Team and Braintree.",
+        description: "Game Producer.",
         stack: "Scrum, Agile, Android OS, iOS"
     },
     {
