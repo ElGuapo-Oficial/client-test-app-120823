@@ -43,7 +43,7 @@
 }
 
 .back .description {
-    color: red;
+    /* color: red; */
     background-color: white;
     font-size: 12px;
     padding: 10px;
