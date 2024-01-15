@@ -5,8 +5,10 @@ export const ExperienceData: ExperienceDataProps[] = [
         id: 1,
         company: "PayPal1",
         years: "7",
-        stack: "JS",
-        image: '/images/paypal.png'
+        image: '/images/paypal.png',
+        link: { value: 'https://www.paypal.com', name: "PayPal.com"},
+        description: "Worked as a Full Stack Developer enhancing PayPal's Expeirience on Checkout Team, Merchant Team and Braintree.",
+        stack: "React, Redux, Node, Express, GraphQL, Java, Ruby",
     },
     {
         id: 2,

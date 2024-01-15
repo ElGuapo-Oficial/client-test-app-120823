@@ -4,7 +4,14 @@ export type ExperienceDataProps = {
     years: string;
     stack: string;
     image: string;
-  };
+    link?: link;
+    description?: string;
+};
+
+type link = {
+    value?: string;
+    name?: string;
+}
 
 export type ExperienceItemProps = {
     item: ExperienceDataProps;

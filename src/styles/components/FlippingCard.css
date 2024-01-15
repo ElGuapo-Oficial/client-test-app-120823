@@ -2,6 +2,7 @@
     perspective: 1000px; /* This makes flipping the card to have depth */
     width: 100%;
     height: 100%;
+    margin-top: 3px;
 }
 
 .card {
@@ -10,9 +11,14 @@
     height: 100%;
     cursor: pointer;
     color: white;
+    border-radius: 5px;
 
     transform-style: preserve-3d; /* allow children to exist in 3d */
     transition: transform 0.5s;
+}
+
+.card:hover {
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
 }
 
 .front, .back {
@@ -22,15 +28,29 @@
     height: 100%;
 }
 
-.front {
+.front .image {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
+    width: 90%;
+    height: 90%;
+    transform: translate(5%, 4%);
 }
 
 .back {
     transform: rotateY(180deg); /* the back element's "visible side" is intially facing away from the viewer, thus hidden */
-    background-color: red;
+    /* background-color: red; */
+}
+
+.back .description {
+    color: red;
+    background-color: white;
+    font-size: 12px;
+    padding: 10px;
+}
+
+.back .description a {
+    color: initial;
 }
 
 .card-container.flipped .card {
