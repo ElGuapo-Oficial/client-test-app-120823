@@ -14,6 +14,7 @@ const NavBar = () => {
     return (
         <nav>
             <div className="main-nav">
+                <a href={`${process.env.REACT_APP_SERVER_URL}/najashmarron.pdf`} download='najasmarron.pdf'>Resume</a>
                 <div className="nav-links">
                     { isAuthenticated && <Link to="/" className="link"><button>Home</button></Link> }
                     { isAuthenticated && <Link to="/exercises" className="link"><button>Exercises</button></Link> }
