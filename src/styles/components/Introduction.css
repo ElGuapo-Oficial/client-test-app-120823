@@ -20,6 +20,12 @@
     animation: appearRightToCenter 1.5s cubic-bezier(0.1, 1, 0.1, 1) forwards;
 }
 
+@supports (background-image: url('../../../public/Najash.webp')) {
+    .selfie {
+      background-image: url('../../../public/Najash.webp');
+    }
+}
+
 /* Do not stretch the selfie more passing this width */
 @media (min-width: 1350px) {
     .selfie {
