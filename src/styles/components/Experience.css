@@ -13,12 +13,12 @@
 }
 
 .animation-left-active {
-    animation: appearFromLeft 1s ease-out forwards;
+    animation: appearFromLeft 0.49s ease-out forwards;
     left: -100%;
 }
 
 .animation-right-active {
-    animation: appearFromRight 1s ease-out forwards;
+    animation: appearFromRight 0.49s ease-out forwards;
     left: 100%;  /* Added to specify initial position */
 }
 
